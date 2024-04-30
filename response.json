@@ -1,1 +1,206 @@
-Okay, I'm ready! What can I do for you today?  😊 
+[
+  [
+    {
+      "question": "In which song from 'Midnights' does Taylor Swift sing about feeling like an 'anti-hero'?",
+      "options": {
+        "a": "Anti-Hero",
+        "b": "Lavender Haze",
+        "c": "Karma"
+      },
+      "answer": "a",
+      "evidence": "The song titled 'Anti-Hero' explicitly explores the theme of feeling like an anti-hero, delving into self-loathing and internal struggles."
+    },
+    {
+      "question": "Which track on 'Midnights' features a collaboration with another artist?",
+      "options": {
+        "a": "Snow On The Beach",
+        "b": "You're On Your Own, Kid",
+        "c": "Mastermind"
+      },
+      "answer": "a",
+      "evidence": "The song 'Snow On The Beach' is a collaboration with Lana Del Rey, as credited on the album."
+    },
+    {
+      "question": "What is the recurring color motif in the 'Lavender Haze' music video?",
+      "options": {
+        "a": "Lavender",
+        "b": "Blue",
+        "c": "Green"
+      },
+      "answer": "a",
+      "evidence": "Throughout the 'Lavender Haze' music video, various objects, including a fishbowl, smoke, and the record player, appear in shades of lavender, aligning with the song's title and theme."
+    },
+    {
+      "question": "Which song on 'Midnights' reflects on a past relationship where the narrator chose ambition over love?",
+      "options": {
+        "a": "Midnight Rain",
+        "b": "You're On Your Own, Kid",
+        "c": "Karma"
+      },
+      "answer": "a",
+      "evidence": "The lyrics of 'Midnight Rain' express regret and introspection regarding a past relationship where the narrator prioritized their career aspirations over romantic love."
+    },
+    {
+      "question": "What is the name of the fictional talk show mentioned in the lyrics of 'Anti-Hero'?",
+      "options": {
+        "a": "The Tonight Show",
+        "b": "The Late Show",
+        "c": "Midnights Mayhem With Me"
+      },
+      "answer": "c",
+      "evidence": "The lyrics of 'Anti-Hero' reference a fictional talk show called 'Midnights Mayhem With Me', adding a layer of self-awareness and satire to the song's narrative."
+    },
+    {
+      "question": "In the 'Bejeweled' music video, Taylor Swift portrays a character inspired by which fairy tale?",
+      "options": {
+        "a": "Cinderella",
+        "b": "Snow White",
+        "c": "Sleeping Beauty"
+      },
+      "answer": "a",
+      "evidence": "The 'Bejeweled' music video draws inspiration from the Cinderella fairy tale, featuring elements such as a castle, stepsisters, and a transformative journey."
+    },
+    {
+      "question": "Which song on 'Midnights' explores the feeling of falling in love with a best friend?",
+      "options": {
+        "a": "You're On Your Own, Kid",
+        "b": "Snow On The Beach",
+        "c": "Mastermind"
+      },
+      "answer": "a",
+      "evidence": "The lyrics of 'You're On Your Own, Kid' depict a narrative of unrequited love for a best friend, ultimately leading to the realization of being alone."
+    },
+    {
+      "question": "What instrument does Taylor Swift play on the roof in the 'Anti-Hero' music video?",
+      "options": {
+        "a": "Guitar",
+        "b": "Piano",
+        "c": "Saxophone"
+      },
+      "answer": "a",
+      "evidence": "In the 'Anti-Hero' music video, Taylor Swift can be seen playing a guitar on the roof, overlooking the cityscape."
+    },
+    {
+      "question": "Which song on 'Midnights' describes a relationship that feels like a dream?",
+      "options": {
+        "a": "Lavender Haze",
+        "b": "Snow On The Beach",
+        "c": "Sweet Nothing"
+      },
+      "answer": "b",
+      "evidence": "The lyrics of 'Snow On The Beach' use dreamlike imagery and metaphors to portray a love that feels surreal and extraordinary, comparing it to the rare occurrence of snow on a beach."
+    },
+    {
+      "question": "What is the significance of track five on 'Midnights', titled 'You're On Your Own, Kid'?",
+      "options": {
+        "a": "It's a collaboration with another artist.",
+        "b": "It's known for being emotionally charged, as is typical for track five on Taylor Swift's albums.",
+        "c": "It's the lead single from the album."
+      },
+      "answer": "b",
+      "evidence": "Track five has historically held a significant position in Taylor Swift's albums, often featuring emotionally intense and personal songs. 'You're On Your Own, Kid' continues this tradition on 'Midnights'."
+    }
+  ],
+  [
+    {
+      "question": "Who is the director of the music video for 'All Too Well (10 Minute Version)'?",
+      "options": {
+        "a": "Joseph Kahn",
+        "b": "Taylor Swift",
+        "c": "Blake Lively"
+      },
+      "answer": "b",
+      "evidence": "Taylor Swift directed the music video for 'All Too Well (10 Minute Version)', showcasing her filmmaking abilities and personal connection to the song."
+    },
+    {
+      "question": "What is the age gap between the characters portrayed in the 'All Too Well' music video?",
+      "options": {
+        "a": "9 years",
+        "b": "11 years",
+        "c": "13 years"
+      },
+      "answer": "b",
+      "evidence": "The lyrics of 'All Too Well' and the casting choices in the music video allude to an age gap of approximately 11 years between the characters."
+    },
+    {
+      "question": "What specific item of clothing is mentioned as a symbol of the relationship in 'All Too Well'?",
+      "options": {
+        "a": "A scarf",
+        "b": "A hat",
+        "c": "A jacket"
+      },
+      "answer": "a",
+      "evidence": "The lyrics, 'And I left my scarf there at your sister's house / And you've still got it in your drawer even now', highlight the scarf as a significant symbol of the past relationship."
+    },
+    {
+      "question": "Which holiday is prominently featured in the 'All Too Well' music video?",
+      "options": {
+        "a": "Thanksgiving",
+        "b": "Christmas",
+        "c": "New Year's Eve"
+      },
+      "answer": "a",
+      "evidence": "The music video depicts scenes of a Thanksgiving dinner, emphasizing the holiday as a backdrop for the emotional turmoil of the relationship."
+    },
+    {
+      "question": "What is the name of the short film that accompanies the release of 'All Too Well (10 Minute Version)'?",
+      "options": {
+        "a": "All Too Well: The Short Film",
+        "b": "The Story Of Us",
+        "c": "Red"
+      },
+      "answer": "a",
+      "evidence": "Taylor Swift released a short film titled 'All Too Well: The Short Film' alongside the 10-minute version of the song, providing a visual narrative to the lyrics."
+    },
+    {
+      "question": "Which actor portrays the male character in the 'All Too Well' music video?",
+      "options": {
+        "a": "Dylan O'Brien",
+        "b": "Jake Gyllenhaal",
+        "c": "Joe Alwyn"
+      },
+      "answer": "a",
+      "evidence": "Dylan O'Brien plays the role of the male character in the 'All Too Well' music video, opposite Sadie Sink."
+    },
+    {
+      "question": "What is the primary color associated with the 'Red' album era?",
+      "options": {
+        "a": "Red",
+        "b": "Blue",
+        "c": "Purple"
+      },
+      "answer": "a",
+      "evidence": "The album title 'Red' and the overall aesthetic of the era heavily utilize the color red, representing intense emotions and the theme of heartbreak."
+    },
+    {
+      "question": "Which actress portrays the female character in the 'All Too Well' music video?",
+      "options": {
+        "a": "Sadie Sink",
+        "b": "Selena Gomez",
+        "c": "Emma Stone"
+      },
+      "answer": "a",
+      "evidence": "Sadie Sink, known for her role in 'Stranger Things', plays the female character in the 'All Too Well' music video."
+    },
+    {
+      "question": "What is the significance of the red scarf in Taylor Swift's 'Red' era?",
+      "options": {
+        "a": "It symbolizes a lost love and the lingering memories of a past relationship.",
+        "b": "It represents Taylor Swift's favorite color and her bold personality.",
+        "c": "It is a fashion statement that became popular during the album's release."
+      },
+      "answer": "a",
+      "evidence": "The red scarf, as depicted in the song 'All Too Well' and its music video, holds deep emotional significance as a symbol of a lost love and the lasting impact of a past relationship."
+    },
+    {
+      "question": "In the 'All Too Well' music video, what age is the female character turning?",
+      "options": {
+        "a": "21",
+        "b": "20",
+        "c": "19"
+      },
+      "answer": "a",
+      "evidence": "The lyrics, 'You, who charmed my dad / And brought me to the city / From the suburbs, where I used to be / And you keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You can't get rid of it / 'Cause you remember it all too well, yeah / 'Cause there we are again in the middle of the night / We're dancing 'round the kitchen in the refrigerator light / Down to our socks, holding slippers / Drinking beer, got no fear / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well / Time won't fly, it's like I'm paralyzed by it / I'd like to be my old self again, but I'm still trying to find it / After plaid shirt days and nights when you made me your own / And I paid for it, I'm yours forevermore / You used to say that it was nice to meet a girl so clean / And at twenty-one, I remember thinking / I'll never be that наивна again / You can't get rid of it / 'Cause you remember it all too well, yeah / 'Cause there we are again on that little town street / You almost ran the red 'cause you were looking over at me / Wind in my hair, I was there / I was there / Down the stairs, I was there / I was there / Sacred prayer, I was there / I was there / It was rare, I was there / I was there / You remember it all too well / Wind in my hair, I was there / I was there / Down the stairs, I was there / I was there / Sacred prayer, I was there / I was there / It was rare, I was there / I was there / And you call me up again just to break me like a promise / So casually cruel in the name of being honest / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well / Time won't fly, it's like I'm paralyzed by it / I'd like to be my old self again, but I'm still trying to find it / You who charmed my dad / And brought me to the city / From the suburbs, where I used to be / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You can't get rid of it / 'Cause you remember it all too well, yeah / And you call me up again just to break me like a promise / So casually cruel in the name of being honest / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well', indicate that the female character is turning 21."
+    }
+  ]
+]

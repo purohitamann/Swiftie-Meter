@@ -61,27 +61,27 @@ const {
     const response = result.response;
     const triviaString = response.text();
     console.log(response.text());
-    const triviaObject = parseTriviaResponse(triviaString);
+    // const triviaObject = parseTriviaResponse(triviaString);
 
-    console.log("Extracted Trivia Object:", triviaObject);
-    function parseTriviaResponse(triviaString) {
-        const openingIndex = triviaString.indexOf('{question:');
-        const closingIndex = triviaString.lastIndexOf('}');
+    // console.log("Extracted Trivia Object:", triviaObject);
+    // function parseTriviaResponse(triviaString) {
+    //     const openingIndex = triviaString.indexOf('{question:');
+    //     const closingIndex = triviaString.lastIndexOf('}');
   
-        if (openingIndex === -1 || closingIndex === -1) {
-          return null; // Handle invalid response format
-        }
+    //     if (openingIndex === -1 || closingIndex === -1) {
+    //       return null; // Handle invalid response format
+    //     }
   
-        const triviaData = triviaString.substring(openingIndex + 11, closingIndex);
-        const parts = triviaData.split(',');
+    //     const triviaData = triviaString.substring(openingIndex + 11, closingIndex);
+    //     const parts = triviaData.split(',');
   
-        const question = parts[0].split(':')[1].trim().slice(1, -1); // Extract question
-        const options = parts[1].split(':')[1].trim().slice(1, -2).split(', '); // Extract options as array
-        const answer = parts[2].split(':')[1].trim().slice(1, -1); // Extract answer (assuming it's the correct option)
-        const evidence = parts[3].split(':')[1].trim().slice(1, -1); // Extract evidence
+    //     const question = parts[0].split(':')[1].trim().slice(1, -1); // Extract question
+    //     const options = parts[1].split(':')[1].trim().slice(1, -2).split(', '); // Extract options as array
+    //     const answer = parts[2].split(':')[1].trim().slice(1, -1); // Extract answer (assuming it's the correct option)
+    //     const evidence = parts[3].split(':')[1].trim().slice(1, -1); // Extract evidence
   
-        return { question, options, answer, evidence };
-      }
+    //     return { question, options, answer, evidence };
+    //   }
   
     // storing the response in a file
     const responseText = response.text();
