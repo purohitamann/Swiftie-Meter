@@ -202,5 +202,107 @@
       "answer": "a",
       "evidence": "The lyrics, 'You, who charmed my dad / And brought me to the city / From the suburbs, where I used to be / And you keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You can't get rid of it / 'Cause you remember it all too well, yeah / 'Cause there we are again in the middle of the night / We're dancing 'round the kitchen in the refrigerator light / Down to our socks, holding slippers / Drinking beer, got no fear / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well / Time won't fly, it's like I'm paralyzed by it / I'd like to be my old self again, but I'm still trying to find it / After plaid shirt days and nights when you made me your own / And I paid for it, I'm yours forevermore / You used to say that it was nice to meet a girl so clean / And at twenty-one, I remember thinking / I'll never be that наивна again / You can't get rid of it / 'Cause you remember it all too well, yeah / 'Cause there we are again on that little town street / You almost ran the red 'cause you were looking over at me / Wind in my hair, I was there / I was there / Down the stairs, I was there / I was there / Sacred prayer, I was there / I was there / It was rare, I was there / I was there / You remember it all too well / Wind in my hair, I was there / I was there / Down the stairs, I was there / I was there / Sacred prayer, I was there / I was there / It was rare, I was there / I was there / And you call me up again just to break me like a promise / So casually cruel in the name of being honest / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well / Time won't fly, it's like I'm paralyzed by it / I'd like to be my old self again, but I'm still trying to find it / You who charmed my dad / And brought me to the city / From the suburbs, where I used to be / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You keep my old scarf from that very first week / 'Cause it reminds you of innocence / And it smells like me / You can't get rid of it / 'Cause you remember it all too well, yeah / And you call me up again just to break me like a promise / So casually cruel in the name of being honest / I'm a crumpled up piece of paper lying here / 'Cause I remember it all, all, all / Too well', indicate that the female character is turning 21."
     }
+  ],
+  [
+    {
+      "question": "What is the genre of Taylor Swift's album '1989'?",
+      "options": {
+        "a": "Country",
+        "b": "Pop",
+        "c": "Rock"
+      },
+      "answer": "b",
+      "evidence": "'1989' marked a significant shift in Taylor Swift's musical style, transitioning from her country roots to a full-fledged pop sound."
+    },
+    {
+      "question": "Which song from '1989' features a spoken-word intro?",
+      "options": {
+        "a": "Shake It Off",
+        "b": "Blank Space",
+        "c": "Wildest Dreams"
+      },
+      "answer": "b",
+      "evidence": "'Blank Space' is characterized by its unique spoken-word intro, where Taylor Swift satirizes media portrayals of her dating life."
+    },
+    {
+      "question": "In the 'Shake It Off' music video, what dance styles does Taylor Swift attempt?",
+      "options": {
+        "a": "Ballet and hip-hop",
+        "b": "Modern and jazz",
+        "c": "Tap and breakdancing"
+      },
+      "answer": "a",
+      "evidence": "The 'Shake It Off' music video showcases Taylor Swift humorously trying various dance styles, including ballet, hip-hop, modern, and cheerleading."
+    },
+    {
+      "question": "What is the theme of the song 'Bad Blood'?",
+      "options": {
+        "a": "Heartbreak",
+        "b": "Revenge",
+        "c": "Friendship"
+      },
+      "answer": "b",
+      "evidence": "'Bad Blood' delves into the theme of betrayal and revenge, with lyrics hinting at a feud between Taylor Swift and another female artist."
+    },
+    {
+      "question": "Which song from '1989' did Ryan Adams cover in his entirety on his album '1989'?",
+      "options": {
+        "a": "Shake It Off",
+        "b": "Blank Space",
+        "c": "All You Had To Do Was Stay"
+      },
+      "answer": "c",
+      "evidence": "Ryan Adams released his own rendition of Taylor Swift's '1989' album, covering all the songs in a different style, including 'All You Had To Do Was Stay'."
+    },
+    {
+      "question": "In the 'Blank Space' music video, what does Taylor Swift do to her lover's car?",
+      "options": {
+        "a": "Sets it on fire",
+        "b": "Keys it",
+        "c": "Pushes it into a lake"
+      },
+      "answer": "b",
+      "evidence": "The 'Blank Space' music video portrays Taylor Swift as a jealous and erratic girlfriend who takes revenge on her lover by, among other things, destroying his car with a golf club."
+    },
+    {
+      "question": "Which song from '1989' is about a long-distance relationship?",
+      "options": {
+        "a": "I Wish You Would",
+        "b": "This Love",
+        "c": "All You Had To Do Was Stay"
+      },
+      "answer": "b",
+      "evidence": "'This Love' explores the complexities of a long-distance relationship and the challenges of maintaining a connection despite physical separation."
+    },
+    {
+      "question": "What is the setting of the 'Wildest Dreams' music video?",
+      "options": {
+        "a": "A beach",
+        "b": "A desert",
+        "c": "A city"
+      },
+      "answer": "b",
+      "evidence": "The 'Wildest Dreams' music video is set in a picturesque desert landscape, with scenes of wildlife and vast open spaces."
+    },
+    {
+      "question": "Which song from '1989' is a collaboration with Kendrick Lamar?",
+      "options": {
+        "a": "Bad Blood",
+        "b": "Style",
+        "c": "Out Of The Woods"
+      },
+      "answer": "a",
+      "evidence": "Taylor Swift and Kendrick Lamar collaborated on a remix of 'Bad Blood', adding a rap verse and a more intense beat to the original song."
+    },
+    {
+      "question": "What is the meaning behind the title '1989'?",
+      "options": {
+        "a": "The year Taylor Swift was born",
+        "b": "The year the album was released",
+        "c": "A significant year in Taylor Swift's life"
+      },
+      "answer": "a",
+      "evidence": "The title '1989' refers to Taylor Swift's birth year, representing a coming-of-age theme and the influences of 1980s pop music on the album."
+    }
   ]
 ]
