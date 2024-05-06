@@ -1,48 +1,72 @@
-import React from 'react'
-import response from  '../../gai-api/response.json';
+import React, { useState } from "react";
+import data from "../../gai-api/response.json";
 
 interface TriviaItem {
-    question: string;
-    options: {
-      a: string;
-      b: string;
-      c: string;
-    };
-    answer: string;
-    evidence: string;
-  }
-const Trivia = () => {
-
-    
-    // {data.map((item: TriviaItem, key:number)=>(
-    //   <div key={key}>
-    //      <p>{ item.question}</p>
-    //   </div>
-    // ))}
-    const fetchQuestions = () =>{
+  question: string;
+  options: {
+    a: string;
+    b: string;
+    c: string;
+  };
+  answer: string;
+  evidence: string;
 }
-    
+
+const Trivia = () => {
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [result, setResult] = useState<string[]>([]);
+
+  const handleOptionChange = (optionKey: string, index: number) => {
+    const newSelectedOptions = [...selectedOptions];
+    newSelectedOptions[index] = optionKey;
+    setSelectedOptions(newSelectedOptions);
+  };
+
+  const handleSubmit = (item: TriviaItem, key: number) => {
+    if (selectedOptions[key] != null) {
+      if (selectedOptions[key] === item.answer) {
+        const newResult = [...result];
+        newResult[key] = `Correct! ${item.evidence}`;
+        setResult(newResult);
+      } else {
+        const newResult = [...result];
+        newResult[key] = `Incorrect! ${item.evidence}`;
+        setResult(newResult);
+      }
+    } else {
+      const newResult = [...result];
+      newResult[key] = `Select your answer!`;
+      setResult(newResult);
+    }
+  };
+
   return (
     <div>
-     <button type="submit" >Start</button>
-     {response.map((subArray: TriviaItem[], index: number) => (
-      subArray.map((item: TriviaItem, key: number) => (
-      <div className="trivia">
-       <div key={key}>
-          <h2>Question: {item.question.toUpperCase()}</h2>
-      <h3>Options</h3>
-        <button>{item.options.a}</button>
-        <button>{item.options.b}</button>
-        <button>{item.options.c}</button>
-      <button type="submit" >Submit Answer</button>
-      <p>{item.answer} {item.evidence}</p>
-      
-        </div> </div>
-   
-      ))
-    ))}
+      <button type="submit">Start</button>
+      {data.map((subArray: TriviaItem[], index: number) =>
+        subArray.map((item: TriviaItem, key: number) => (
+          <div className="trivia" key={key}>
+            <h2>Question: {item.question.toUpperCase()}</h2>
+            <h3>Options</h3>
+            <button value={"a"} onClick={() => handleOptionChange("a", key)}>
+              {item.options.a}
+            </button>
+            <button value={"b"} onClick={() => handleOptionChange("b", key)}>
+              {item.options.b}
+            </button>
+            <button value={"c"} onClick={() => handleOptionChange("c", key)}>
+              {item.options.c}
+            </button>
+            <button type="submit" onClick={() => handleSubmit(item, key)}>
+              Submit Answer
+            </button>
+            <p> You Selected: {selectedOptions[key]}</p>
+            <p> Result: {result[key]} </p>
+          </div>
+        ))
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Trivia
+export default Trivia;
