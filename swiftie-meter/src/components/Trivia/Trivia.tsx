@@ -48,13 +48,16 @@ const Trivia = () => {
           <div className="trivia" key={key}>
             <h2>Question: {item.question.toUpperCase()}</h2>
             <h3>Options</h3>
-            <button value={"a"} onClick={() => handleOptionChange("a", key)}>
+            <label htmlFor={"a"} >a</label>
+            <button id={"a"} onClick={() => handleOptionChange("a", key)}>
               {item.options.a}
             </button>
-            <button value={"b"} onClick={() => handleOptionChange("b", key)}>
+            <label htmlFor={"b"} >b</label>
+            <button id={"b"}  onClick={() => handleOptionChange("b", key)}>
               {item.options.b}
             </button>
-            <button value={"c"} onClick={() => handleOptionChange("c", key)}>
+            <label htmlFor={"c"} >c</label>
+            <button id={"c"}  onClick={() => handleOptionChange("c", key)}>
               {item.options.c}
             </button>
             <button type="submit" onClick={() => handleSubmit(item, key)}>
