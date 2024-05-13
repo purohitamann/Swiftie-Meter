@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Swiftie Meter</h1>
+        {/* <h1>Swiftie Meter</h1> */}
         <Trivia />
       </div>
     </>
