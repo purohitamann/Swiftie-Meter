@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import data from "../../gai-api/response.json";
+import Question from "./Trivia/Question/Question";
 
 interface TriviaItem {
   question: string;
@@ -54,49 +55,41 @@ const Trivia = () => {
           <h2>Your Swiftie Score: {totalScore}</h2>
         </div>
       ) : (
-        <div className="container" > 
-          <div className="flex flex-col items-center justify-center float-left p-2">
+        <div>
+          <div>
             <div>
               <h2>Question: {`${currentQuestionIndex} / ${noOfQuestion}`}</h2>
-              <h2>Question: {item.question}</h2>
-            </div>
-            <div>
-              <h3>Options</h3>
-              <div>
-
-           
-              <button
-               
-                value={"a"}
-                onClick={() => handleOptionChange("a", currentQuestionIndex)}
-              >
-                a{item.options.a}
-              </button>
-              <button
-               
-                value={"b"}
-                onClick={() => handleOptionChange("b", currentQuestionIndex)}
-              >
-                b{item.options.b}
-              </button>
-              <button
-              
-                value={"c"}
-                onClick={() => handleOptionChange("c", currentQuestionIndex)}
-              >
-                c{item.options.c}
-              </button>
-              </div>
             </div>
 
             <div>
+              <Question
+                question={item.question}
+                options={item.options}
+                handleOptionChange={handleOptionChange}
+                selectedOption={currentQuestionIndex}
+              ></Question>
+            </div>
+            <div>
+              <h2>Quiz Completed</h2>
+              <h2>Your Swiftie Score: {totalScore}</h2>
+            </div>
+            <div>
               <div>
-              <button onClick={() => handleSubmit(item, currentQuestionIndex)}>
-                Submit Answer
-              </button>
-              <button onClick={handleNext}>Next Question</button>
+                <button
+                  onClick={() => handleSubmit(item, currentQuestionIndex)}
+                >
+                  Submit Answer
+                </button>
+                <button
+                  className={
+                    selectedOption ? "cursor-default" : "cursor-not-allowed"
+                  }
+                  onClick={handleNext}
+                >
+                  Next Question
+                </button>
               </div>
-             
+
               <div>
                 <p> You Selected: {selectedOption}</p>
                 <p> Result: {result} </p>
