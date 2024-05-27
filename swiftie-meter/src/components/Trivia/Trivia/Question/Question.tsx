@@ -19,7 +19,7 @@ const Question: React.FC<QuestionProps> = ({
   handleOptionChange,
 }) => {
   return (
-    <div className=" filter w-20 h-5/6 sepia md:container box-content z-10 font-light tracking-wide align-top md:break-normal border-dashed rounded-sm  mx-3 p-5  leading-relaxed text-left subpixel-antialiased text-lg font-mono md:mx-auto bg-stone-500  text-white select-none ">
+    <div className=" filter w-20 max-h-[500px] sepia md:container box-content z-10 font-light tracking-wide align-top md:break-normal border-dashed rounded-sm  mx-3 p-5 my-5 rounded-sm  leading-relaxed text-left subpixel-antialiased text-lg font-mono md:mx-auto bg-stone-500  text-white select-none ">
       <div className="grid grid-row-2 divide-y-2 divide-none">
         <h2>
           Question: <span className="font-semibold"> {question}</span>
