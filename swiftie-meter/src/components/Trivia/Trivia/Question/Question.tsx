@@ -15,39 +15,34 @@ const Question: React.FC<QuestionProps> = ({
   question,
   options,
   selectedOption,
-
   handleOptionChange,
 }) => {
   return (
-    <div className=" filter w-20 max-h-[500px] sepia md:container box-content z-10 font-light tracking-wide align-top md:break-normal border-dashed rounded-sm  mx-3 p-5 my-5 rounded-sm  leading-relaxed text-left subpixel-antialiased text-lg font-mono md:mx-auto bg-stone-500  text-white select-none ">
-      <div className="grid grid-row-2 divide-y-2 divide-none">
-        <h2>
-          Question: <span className="font-semibold"> {question}</span>
+    <div className="bg-stone-500 text-white p-5 my-5 mx-3 rounded-sm text-lg font-mono select-none md:mx-auto md:max-w-4xl">
+      <div className="divide-y divide-gray-200">
+        <h2 className="text-base md:text-lg leading-normal">
+          Question: <span className="font-semibold">{question}</span>
         </h2>
-        <div className="container w-90 ">
-          <h3>Options:</h3>
-          <div className="grid grid-cols-3 divide-x divide-none">
+        <div className="pt-4">
+          <h3 className="font-semibold">Options:</h3>
+          <div className="space-y-4 mt-2">
             <button
-              className="transition duration-500 ease-in-out transform hover:filter hover:invert hover:scale-110 delay-10 hover:skew-y-2 cursor-pointer"
-              value={"a"}
+              className="block w-full text-left transition duration-500 ease-in-out transform hover:scale-105"
               onClick={() => handleOptionChange("a", selectedOption)}
             >
-              a {options.a}
+              a) {options.a}
             </button>
             <button
-              className="transition duration-500 ease-in-out transform hover:filter hover:invert hover:scale-110 delay-10 hover:skew-x-2 cursor-pointer"
-              value={"b"}
+              className="block w-full text-left transition duration-500 ease-in-out transform hover:scale-105"
               onClick={() => handleOptionChange("b", selectedOption)}
             >
-              b {options.b}
+              b) {options.b}
             </button>
-
             <button
-              className="transition duration-500 ease-in-out transform hover:filter hover:invert hover:scale-110 delay-10 hover:-skew-y-2 cursor-pointer"
-              value={"c"}
+              className="block w-full text-left transition duration-500 ease-in-out transform hover:scale-105"
               onClick={() => handleOptionChange("c", selectedOption)}
             >
-              c {options.c}
+              c) {options.c}
             </button>
           </div>
         </div>
