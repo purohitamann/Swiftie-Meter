@@ -51,7 +51,7 @@ const Trivia = () => {
   return (
     <>
       {currentQuestionIndex === noOfQuestion ? (
-        <div className="m-5 p-5 flex justify-center items-center flex-col rounded-sm text-white bg-stone-600 sepia">
+        <div className="m-5 p-5 flex justify-center items-center flex-col rounded-sm text-white bg-stone-600 sepia ">
           <h2>Quiz Completed!</h2>
           <h2>
             Your Swiftie Score:{" "}
@@ -60,7 +60,7 @@ const Trivia = () => {
         </div>
       ) : (
         <div className="p-3 sm:p-5">
-          <div className="flex flex-col sm:flex-row justify-between bg-stone-500 text-white font-mono sepia rounded-sm mb-3">
+          <div className="flex flex-col sm:flex-row justify-between bg-stone-500 text-white font-mono sepia rounded-sm mb-3 mt-12">
             <h2 className="text-sm sm:text-base">
               Question: {`${currentQuestionIndex + 1} / ${noOfQuestion}`}
             </h2>
