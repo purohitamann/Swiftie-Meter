@@ -4,7 +4,7 @@ const Community = () => {
   return (
     <div id="community">
       <div className="flex flex-col font-sometype-mono w-[1200px]  mt-32 h-[536px]">
-        <h1 className=" font-bold text-3xl  pb-4 ">COMMUNITY</h1>
+        <h1 className=" font-bold text-3xl text-white pb-4 ">COMMUNITY</h1>
         <div className=" text-3xl bg-white rounded-md p-12">
           <div className=" font-bold px-16">
             <table className="w-full">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center w-[1200px]  mt-32 p-16 h-[536px] bg-white rounded-md">
+    <div className="flex z-3 flex-col items-center w-[1200px] z-10 mt-32 p-16 h-[536px] bg-white rounded-md">
       <div className="flex flex-col justify-center items-center  p-2 font-sometype-mono text-3xl uppercase ">
         <h1 className=" font-bold ">
           Test Your <span className="italic font-light">Taylor Swift</span>{" "}
