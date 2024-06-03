@@ -2,13 +2,20 @@ import React from "react";
 
 const Navabar = () => {
   return (
-    <div className="flex justify-between items-center m-12 p-2 border-b-2 border-gray-100 bg-gray-600 sepia font-mono text-white fixed -top-10 left-0 right-0 z-10">
-      <h1 className="text-2xl font-bold">Swiftie Meter</h1>
-      <ul className="flex items-center">
-        <li className="mx-2">Home</li>
-        <li className="mx-2">About</li>
-        <li className="mx-2">Play</li>
-        <li className="mx-2">Leaderboard</li>
+    <div
+      style={{ backgroundColor: "#292929" }}
+      className="flex rounded-lg justify-between items-center m-12 p-8 fixed -top-10  z-10 w-[1200px] "
+    >
+      <span className="flex items-center">
+        <h1 className="text-5xl  font-monofett  text-white">Swiftie Meter</h1>
+      </span>
+      <ul className="flex items-center font-medium font-sometype-mono text-white">
+        <li className="mx-2">HOME</li>
+        <li className="mx-2">ABOUT</li>
+        <li className="mx-4 text-black bg-white rounded-lg p-2 hover:text-white hover:bg-black hover:bg-opacity-50 transition-all duration-150">
+          PLAY!
+        </li>
+        <li className="mx-2">COMMUNITY</li>
       </ul>
     </div>
   );

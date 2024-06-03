@@ -51,7 +51,7 @@ const Trivia = () => {
   return (
     <>
       {currentQuestionIndex === noOfQuestion ? (
-        <div className="m-5 p-5 flex justify-center items-center flex-col rounded-sm text-white bg-stone-600 sepia ">
+        <div className="m-8 p-5 flex justify-center items-center flex-col rounded-sm text-white bg-stone-600 sepia ">
           <h2>Quiz Completed!</h2>
           <h2>
             Your Swiftie Score:{" "}

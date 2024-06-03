@@ -1,14 +1,19 @@
 import "./App.css";
 import Trivia from "./components/Trivia/Trivia";
 import Navabar from "./components/Navbar/Navabar";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <>
-      <div>
+      <div
+        className="flex flex-col items-center"
+        style={{ backgroundColor: "#292929" }}
+      >
         {/* <h1>Swiftie Meter</h1> */}
         <Navabar />
-        <Trivia />
+        <Home />
+        {/* <Trivia /> */}
       </div>
     </>
   );

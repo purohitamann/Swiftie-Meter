@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Monofett&display=swap");
+@import url("https://cdn.example.com/fonts/sometype-mono.css");
+@font-face {
+  font-family: "Monofett";
+  src: url("/path-to-font/Monofett-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sometype Mono";
+  src: url("assets/fonts/SometypeMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-monofett {
+  font-family: "Monofett", sans-serif; /* Fallback to sans-serif if Monofett isn't loaded */
+}
+.font-sometype-mono {
+  font-family: "Sometype Mono", monospace; /* Fallback to sans-serif if Monofett isn't loaded */
+}
