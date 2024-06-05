@@ -3,15 +3,17 @@ import React from "react";
 const Navabar = () => {
   return (
     <div
-      style={{ backgroundColor: "#292929" }}
+      style={{
+        backgroundColor: "#292929",
+      }}
       className="flex rounded-lg justify-between items-center m-12 p-8  z-20 fixed -top-10  w-[1200px] "
     >
-      <span className="flex items-center">
+      <span className="flex items-center ">
         <h1 className="text-5xl  font-monofett  text-white animate-pulse">
           Swiftie Meter
         </h1>
       </span>
-      <ul className="flex items-center font-medium font-sometype-mono text-white">
+      <ul className="flex items-center font-medium font-sometype-mono sepia text-white">
         <a href="#home" className="mx-2">
           HOME
         </a>
