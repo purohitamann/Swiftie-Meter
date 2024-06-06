@@ -1,34 +1,11 @@
 import React, { useState } from "react";
+// import User from "../../../server/models/User";
 
 function SignupForm() {
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  //   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //     event.preventDefault();
-
-  //     // if (email !== confirmEmail) {
-  //     //   alert("Emails do not match");
-  //     //   return;
-  //     // }
-
-  //     const response = await fetch("http://localhost:3000/login", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ email, password }),
-  //     });
-
-  //     if (response.ok) {
-  //       alert("Signup successful");
-  //       console.log("Signup successful");
-  //     } else {
-  //       alert("Signup failed");
-  //       console.log("Signup failed");
-  //     }
-  //   };
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
