@@ -9,6 +9,7 @@ const Home = () => {
           Knowledge!
         </h1>
         <br />
+        <br />
         <p className="font-bold ">
           Are you a true Swiftie? Prove it! Swiftie Meter is the ultimate trivia
           app for Taylor Swift fans. Dive into our exciting trivia challenges
