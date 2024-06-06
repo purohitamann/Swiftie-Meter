@@ -54,38 +54,45 @@ function SignupForm() {
     }
   };
   return (
-    <div className="flex z-3 flex-col items-center  w-[1200px] z-10 mt-32 p-16 h-[536px] bg-white rounded-md text-black">
+    <div className="flex z-3  items-center flex-col w-[1200px] z-10 mt-32 p-16 h-[536px] bg-white rounded-md text-black">
       <form onSubmit={handleSubmit}>
-        <label>
-          Email:
-          <input
-            type="email"
-            className="border-2 border-gray-300 p-2 m-2"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Confirm Email:
-          <input
-            className="border-2 border-gray-300 p-2 m-2"
-            type="email"
-            value={confirmEmail}
-            onChange={(e) => setConfirmEmail(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Password:
-          <input
-            className="border-2 border-gray-300 p-2 m-2"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
+        <div>
+          <label>
+            Email:
+            <input
+              type="email"
+              className="border-2 border-gray-300 p-2 m-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Confirm Email:
+            <input
+              className="border-2 border-gray-300 p-2 m-2"
+              type="email"
+              value={confirmEmail}
+              onChange={(e) => setConfirmEmail(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Password:
+            <input
+              className="border-2 border-gray-300 p-2 m-2"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+
         <button
           type="submit"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

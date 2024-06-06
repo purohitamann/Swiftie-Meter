@@ -1,11 +1,11 @@
 // node --version # Should be >= 18
 // npm install @google/generative-ai
-const fs = require("fs");
-const {
+import { readFile, writeFile } from "fs";
+import {
   GoogleGenerativeAI,
   HarmCategory,
   HarmBlockThreshold,
-} = require("@google/generative-ai");
+} from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-1.5-pro-latest";
 const API_KEY = "AIzaSyBQZiYBsCR0aLm7EW_OZBp0aOrlehD2dMI";
@@ -90,7 +90,7 @@ async function runChat() {
   console.log(trimmedData);
   // Convert the response text to a JSON object
   const responseObject = trimmedData;
-  fs.readFile("response.json", "utf8", (err, data) => {
+  readFile("response.json", "utf8", (err, data) => {
     if (err || data === "") {
       // If the file does not exist, create a new array
       data = "[]";
@@ -106,7 +106,7 @@ async function runChat() {
     const responseJson = JSON.stringify(responseArray, null, 2);
 
     // Write the JSON string to the file
-    fs.writeFile("response.json", responseJson, (err) => {
+    writeFile("response.json", responseJson, (err) => {
       if (err) throw err;
       console.log("The file has been saved!");
     });

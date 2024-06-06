@@ -13,6 +13,7 @@ const EntryPoint = () => {
         backgroundColor: "#292929",
         width: "w-screen",
         height: "h-screen",
+        overflow: "hidden",
       }}
       id="home"
       className="flex flex-col items-center"
@@ -22,7 +23,7 @@ const EntryPoint = () => {
       <Navabar />
 
       <Home />
-      <div className="blur-[800px] w-1/2 h-1/2 z-100 absolute left-2/3 bottom-2/3 sepia bg-slate-400 rounded-xl"></div>
+      <div className="blur-[800px]   w-1/2 h-1/2 z-100 absolute left-[40%] bottom-2/3 sepia bg-slate-400  rounded-xl"></div>
       <SignupForm />
       <About />
       <PlayGround />
