@@ -5,6 +5,7 @@ import About from "../About/About";
 import Community from "../Community/Community";
 import Footer from "../Footer/Footer";
 import PlayGround from "../PlayGround/PlayGround";
+import SignupForm from "../SignupForm/SignupForm";
 const EntryPoint = () => {
   return (
     <div
@@ -19,8 +20,10 @@ const EntryPoint = () => {
       <div className="blur-[500px] w-1/2 h-1/2 z-100 absolute right-1/2 bottom-1/2 sepia bg-white rounded-xl"></div>
 
       <Navabar />
+
       <Home />
       <div className="blur-[800px] w-1/2 h-1/2 z-100 absolute left-2/3 bottom-2/3 sepia bg-slate-400 rounded-xl"></div>
+      <SignupForm />
       <About />
       <PlayGround />
       <Community />
