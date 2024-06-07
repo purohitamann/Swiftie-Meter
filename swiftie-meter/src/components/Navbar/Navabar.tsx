@@ -14,7 +14,7 @@ const Navabar = () => {
         </h1>
       </span>
       <ul className="flex items-center font-medium font-sometype-mono  text-white">
-        <a href="#home" className="mx-2">
+        <a href="/" className="mx-2">
           HOME
         </a>
         <a href="#about" className="mx-2">
