@@ -4,26 +4,20 @@ import cors from "cors";
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
-const db_pass = process.env.db_pass;
+// MERN Stack Application
 const app = express();
-console.log(db_pass);
 app.use(cors());
-
 app.use(bodyParser.json());
 
-const uri = `mongodb+srv://${process.env.db_user}:${db_pass}@swift-meter.r5zb9gw.mongodb.net/SwiftieMeter/?retryWrites=true&w=majority`;
-//@  == %40
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@swift-meter.r5zb9gw.mongodb.net/SwiftieMeter?retryWrites=true&w=majority`;
 const client = new MongoClient(uri);
 
-app.post("/login", async (req, res) => {
+app.post("/signup", async (req, res) => {
   const { email, password } = req.body;
 
-  console.log(`In Server\nEmail: ${email}`);
-  console.log(`Password: ${password}`);
-
-  // if (!email || !password) {
-  //   return res.status(400).json({ message: "Email and password are required" });
-  // }
+  if (!email || !password) {
+    return res.status(400).json({ message: "Email and password are required" });
+  }
 
   try {
     await client.connect();
@@ -44,12 +38,24 @@ app.post("/login", async (req, res) => {
     await client.close();
   }
 });
+app.get("/leaderboard", async (req, res) => {
+  try {
+    console.log("Connecting to MongoDB for User Retrieval...");
+    await client.connect();
+    const database = client.db("SwiftieMeter");
+    const collection = database.collection("UserAccount");
+    const users = await collection.find({}).sort({ score: -1 }).toArray();
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    console.error("Error retrieving users:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  } finally {
+    await client.close();
+  }
+});
 
-app.listen(3000, () =>
-  console.log(
-    "Server running on port 3000\n Pass:" +
-      process.env.db_pass +
-      "\n User:" +
-      process.env.db_user
-  )
-);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

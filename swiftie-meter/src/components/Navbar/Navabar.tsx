@@ -21,10 +21,13 @@ const Navabar = () => {
           ABOUT
         </a>
         <li className="mx-4 text-black bg-white rounded-lg p-2 hover:text-white hover:bg-black hover:bg-opacity-50 transition-all duration-150">
-          PLAY!
+          <a href="/Play">PLAY!</a>
         </li>
         <a href="#community" className="mx-2">
-          COMMUNITY
+          <a href="/leaderboard">COMMUNITY</a>
+        </a>
+        <a href="/signup" className="mx-2">
+          SIGNUP
         </a>
       </ul>
     </div>

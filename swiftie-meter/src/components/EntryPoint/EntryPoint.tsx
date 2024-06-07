@@ -24,9 +24,9 @@ const EntryPoint = () => {
 
       <Home />
       <div className="blur-[800px]   w-1/2 h-1/2 z-100 absolute left-[40%] bottom-2/3 sepia bg-slate-400  rounded-xl"></div>
-      <SignupForm />
+      {/* <SignupForm /> */}
       <About />
-      <PlayGround />
+      {/* <PlayGround /> */}
       <Community />
       {/* <div className="blur-[500px] w-1/2 h-1/2 z-100 absolute left-1/2 top-1/2 bg-white rounded-xl"></div> */}
       <Footer />
