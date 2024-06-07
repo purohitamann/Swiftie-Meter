@@ -2,7 +2,7 @@ import "./App.css";
 import EntryPoint from "./components/EntryPoint/EntryPoint";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginForm from "./components/LoginForm/LoginForm";
-import SignupForm from "./components/SignupForm/SignupForm";
+import SignupForm from "./components/Screens/Signup/SignupForm";
 import PlayGround from "./components/PlayGround/PlayGround";
 import Community from "./components/Community/Community";
 

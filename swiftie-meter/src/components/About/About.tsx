@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about">
-      <div className="blur-[500px] w-1/2 h-1/2 z-100 absolute -left-1/2 uppercase -top-2/3  bg-white rounded-xl"></div>
+    <div id="about" className="z-40">
+      <div className="blur-[500px] w-1/2 h-1/2  absolute -left-1/2 uppercase -top-2/3  bg-white rounded-xl"></div>
       <div className="flex flex-col font-sometype-mono w-[1200px]  mt-32 h-auto">
         <h1 className=" font-bold text-3xl  text-white pb-4 ">ABOUT</h1>
         <div className=" text-3xl bg-white rounded-md p-12">
