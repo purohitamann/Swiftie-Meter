@@ -38,6 +38,36 @@ app.post("/signup", async (req, res) => {
     await client.close();
   }
 });
+
+app.post("/authenticate", async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ message: "Email and password are required" });
+  }
+
+  try {
+    await client.connect();
+    const database = client.db("SwiftieMeter");
+    const collection = database.collection("UserAccount");
+
+    const user = await collection.findOne({ email, password });
+
+    if (!user) {
+      return res.status(401).json({ message: "Invalid email or password" });
+    }
+
+    res.json({ message: "Login successful" });
+  } catch (error) {
+    console.error("Error during authentication:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  } finally {
+    if (client) {
+      await client.close();
+    }
+  }
+});
+
 app.get("/leaderboard", async (req, res) => {
   try {
     console.log("Connecting to MongoDB for User Retrieval...");
