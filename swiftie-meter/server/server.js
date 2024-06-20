@@ -14,7 +14,10 @@ const client = new MongoClient(uri);
 
 app.post("/signup", async (req, res) => {
   const { email, password } = req.body;
-
+  res.json({
+    message: "User account created successfully",
+    email: email, // Add this line
+  });
   if (!email || !password) {
     return res.status(400).json({ message: "Email and password are required" });
   }
