@@ -13,7 +13,7 @@ const LoginForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <label className="block">
-        <span className="text-gray-700">Email:</span>
+        <span className="text-gray-700">Email :</span>
         <input
           type="email"
           value={email}
