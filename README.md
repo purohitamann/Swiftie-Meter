@@ -1,4 +1,4 @@
-# Trivia App
+# Swiftie Meter App
 
 This project is a Trivia application built with React and TailwindCSS. It offers users a series of questions with multiple-choice answers and calculates the score based on the user's responses.
 
