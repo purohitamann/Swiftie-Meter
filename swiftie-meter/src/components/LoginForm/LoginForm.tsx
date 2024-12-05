@@ -1,13 +1,51 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [createdEmail, setCreatedEmail] = useState("");
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    // Handle form submission here
-    console.log(`Email: ${email}, Password: ${password}`);
+
+    try {
+      const response = await axios.post("http://localhost:3000/signup", {
+        email,
+        password,
+      });
+
+      if (response.data.success) {
+        console.log("Login successful");
+        setCreatedEmail(email); // Set the createdEmail state variable here
+        // Handle successful login here (e.g., redirect to another page)
+      } else {
+        console.log("Invalid email or password");
+        // Handle failed login here (e.g., show an error message)
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      // Handle error during login here (e.g., show an error message)
+    }
+
+    // try {
+    //   const response = await axios.post("http://localhost:3000/authenticate", {
+    //     email,
+    //     password,
+    //   });
+
+    //   if (response.data.success) {
+    //     console.log("Login successful");
+    //     // Handle successful login here (e.g., redirect to another page)
+    //   } else {
+    //     console.log("Invalid email or password");
+    //     // Handle failed login here (e.g., show an error message)
+    //   }
+    // } catch (error) {
+    //   console.error("Error during login:", error);
+    //   // Handle error during login here (e.g., show an error message)
+    // }
+    // console.log(`Email: ${email}, Password: ${password}`);
   };
 
   return (
@@ -33,6 +71,11 @@ const LoginForm: React.FC = () => {
         />
       </label>
       <button type="submit">Login</button>
+      {createdEmail && (
+        <p className="text-green-500">
+          Login successful! Welcome, {createdEmail}!
+        </p>
+      )}
     </form>
   );
 };

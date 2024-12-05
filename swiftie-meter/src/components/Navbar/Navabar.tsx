@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
+interface User {
+  email: string;
+  score: number;
+  password: string;
+  // Include other properties of the user object if there are any
+}
 
 const Navabar = () => {
+  const [user, setUser] = useState({});
   return (
     <div
       style={{
@@ -12,6 +20,11 @@ const Navabar = () => {
         <h1 className="text-5xl  font-monofett  text-white animate-pulse">
           Swiftie Meter
         </h1>
+      </span>
+      <span className="flex items-center">
+        <a href="/login" className="mx-2">
+          {/* user.email */}
+        </a>
       </span>
       <ul className="flex items-center font-medium font-sometype-mono  text-white">
         <a href="/" className="mx-2">
